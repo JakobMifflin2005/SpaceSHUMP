@@ -46,7 +46,7 @@ public class Main : MonoBehaviour
     }
     void Restart()
     {
-        SceneManager.LoadScene("_Scene_0");
+        SceneManager.LoadScene("__Scene_0");
     }
     static public void HERO_DIED()
     {
