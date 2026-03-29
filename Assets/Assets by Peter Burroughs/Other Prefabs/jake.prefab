@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4070209521177695462}
   - component: {fileID: 1151439867167025206}
   m_Layer: 0
-  m_Name: Enemy_2
+  m_Name: jake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
