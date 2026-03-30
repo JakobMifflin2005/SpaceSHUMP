@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8432289504592190041}
   - component: {fileID: 7788468553040238264}
   - component: {fileID: 4672981814333878584}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy3_knob_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 527438822109286613}
   - component: {fileID: 8993854274529707524}
   - component: {fileID: 2822387141906879985}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy3_cylinder_Small_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 9045272291147894036}
   - component: {fileID: 8786227641134598008}
   - component: {fileID: 5474042591209791076}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy3_fin_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 8477879079451030169}
   - component: {fileID: 9058542582497488353}
   - component: {fileID: 2593116839304482087}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy3_knob_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 1495370713836368064}
   - component: {fileID: 8079282815041648756}
   - component: {fileID: 3962783548465838092}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy3_wing_Right 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 2374744766968063735}
   - component: {fileID: 6609582019994102779}
   - component: {fileID: 916857982428347313}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy3_cylinder_Small_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 3443207251611670126}
   - component: {fileID: 1666985273392890076}
   - component: {fileID: 8388143050535870172}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy3_pincher_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -592,7 +592,7 @@ GameObject:
   - component: {fileID: 3153978852439487331}
   - component: {fileID: 8611619313162208747}
   - component: {fileID: 7279454400652748634}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy3_fin_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -675,7 +675,7 @@ GameObject:
   - component: {fileID: 6247397822701102409}
   - component: {fileID: 4536129998340571471}
   - component: {fileID: 931092542286972217}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy3_arm_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -758,7 +758,7 @@ GameObject:
   - component: {fileID: 5776466178025909113}
   - component: {fileID: 8523950304406922232}
   - component: {fileID: 5298065838022032096}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy3_arm_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -841,7 +841,7 @@ GameObject:
   - component: {fileID: 8570255154766903518}
   - component: {fileID: 3995773643962555057}
   - component: {fileID: 5436871521866664935}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy3_loop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -924,7 +924,7 @@ GameObject:
   - component: {fileID: 9218754645622853821}
   - component: {fileID: 862023933014456638}
   - component: {fileID: 222858348897644061}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy3_cylinder_Large_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1007,7 +1007,7 @@ GameObject:
   - component: {fileID: 7607359554395195171}
   - component: {fileID: 2082398227510321210}
   - component: {fileID: 7895659813586155280}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy3_wing_Left 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1090,7 +1090,9 @@ GameObject:
   - component: {fileID: 6285521348735295968}
   - component: {fileID: -930233804846828040}
   - component: {fileID: 7440962410877602613}
-  m_Layer: 0
+  - component: {fileID: 4857270808954616205}
+  - component: {fileID: 2641537391256824852}
+  m_Layer: 9
   m_Name: Enemy_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1132,6 +1134,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04f75bde23c5eac49ae29db309b8229b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 10
+  fireRate: 0.3
+  health: 2
+  score: 100
+  lifeTime: 5
+  midpointYRange: {x: 1.5, y: 3}
+  drawDebugInfo: 0
+  points: []
+  birthTime: 0
 --- !u!114 &7440962410877602613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1150,6 +1161,36 @@ MonoBehaviour:
   screenLocs: 0
   camWidth: 0
   camHeight: 0
+--- !u!54 &4857270808954616205
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6661238303715507034}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 120
+  m_CollisionDetection: 0
+--- !u!136 &2641537391256824852
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6661238303715507034}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.2
+  m_Height: 2.9
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6971900274085137820
 GameObject:
   m_ObjectHideFlags: 0
@@ -1161,7 +1202,7 @@ GameObject:
   - component: {fileID: 7411001872874806688}
   - component: {fileID: 4385663986534813199}
   - component: {fileID: 2343715909845935968}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy3_pincher_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1242,7 +1283,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1955103110992375208}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy3_wing_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1280,7 +1321,7 @@ GameObject:
   - component: {fileID: 8075509049668264302}
   - component: {fileID: 3713942986891838600}
   - component: {fileID: 7114867495404339104}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy3_cylinder_Large_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1361,7 +1402,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2107398363390253027}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy3_wing_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1399,7 +1440,7 @@ GameObject:
   - component: {fileID: 4445041535004083536}
   - component: {fileID: 759202746655335875}
   - component: {fileID: 4689058120959575116}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy3_body
   m_TagString: Untagged
   m_Icon: {fileID: 0}

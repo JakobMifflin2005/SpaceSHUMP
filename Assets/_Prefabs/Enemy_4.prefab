@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6396417184361166060}
   - component: {fileID: 1592124848428273984}
   - component: {fileID: 956383508048619888}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy4_shield_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 3025703918091395492}
   - component: {fileID: 3699868949157462321}
   - component: {fileID: 3565822998656550425}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy4_cockpit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 4708192590797958090}
   - component: {fileID: 3000593060197818323}
   - component: {fileID: 9128430263747185591}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy4_largeFin_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 5132262645225783300}
   - component: {fileID: 8380299792604640912}
   - component: {fileID: 9169986679359177775}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy4_body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,9 @@ GameObject:
   - component: {fileID: 4521375180638956576}
   - component: {fileID: -1951406397220407973}
   - component: {fileID: -7029727395940143889}
-  m_Layer: 0
+  - component: {fileID: -384271680940751106}
+  - component: {fileID: -190186571876918165}
+  m_Layer: 9
   m_Name: Enemy_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -388,6 +390,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36116ad06e648ef4dad4da67c20aaf77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 10
+  fireRate: 0.3
+  health: 3
+  score: 100
 --- !u!114 &-7029727395940143889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -406,6 +412,36 @@ MonoBehaviour:
   screenLocs: 0
   camWidth: 0
   camHeight: 0
+--- !u!54 &-384271680940751106
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3888003309578024602}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 120
+  m_CollisionDetection: 0
+--- !u!136 &-190186571876918165
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3888003309578024602}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.2
+  m_Height: 2.9
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4141278718574652521
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,7 +453,7 @@ GameObject:
   - component: {fileID: 3758612052453433681}
   - component: {fileID: 7371162529784340377}
   - component: {fileID: 8799191598040808594}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy4_shield_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -500,7 +536,7 @@ GameObject:
   - component: {fileID: 5805127606762248726}
   - component: {fileID: 1988698922858530778}
   - component: {fileID: 5576088349632539644}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy4_arm_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -583,7 +619,7 @@ GameObject:
   - component: {fileID: 3768805162280806774}
   - component: {fileID: 6809143917290123344}
   - component: {fileID: 3040436004925982147}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy4_shield_Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -666,7 +702,7 @@ GameObject:
   - component: {fileID: 4977470612358846990}
   - component: {fileID: 6281051263515864108}
   - component: {fileID: 6633198505910399217}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy4_arm_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -749,7 +785,7 @@ GameObject:
   - component: {fileID: 3274362599278491456}
   - component: {fileID: 8501148911507209512}
   - component: {fileID: 2205071690708629317}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy4_largeFin_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -832,7 +868,7 @@ GameObject:
   - component: {fileID: 4052794806566488667}
   - component: {fileID: 3474435392414825451}
   - component: {fileID: 1206037839088971060}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy4_smallFin_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -915,7 +951,7 @@ GameObject:
   - component: {fileID: 2639849057240014930}
   - component: {fileID: 1134127430365021112}
   - component: {fileID: 5401031555624220871}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy4_smallFin_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
