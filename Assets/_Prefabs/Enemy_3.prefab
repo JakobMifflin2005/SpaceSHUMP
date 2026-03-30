@@ -1136,7 +1136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   fireRate: 0.3
-  health: 2
+  health: 1
   score: 100
   lifeTime: 5
   midpointYRange: {x: 1.5, y: 3}
